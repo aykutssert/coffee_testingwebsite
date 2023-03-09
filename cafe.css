@@ -1,0 +1,391 @@
+/*
+font-family: 'Noto Serif', serif;
+font-family: 'Shantell Sans', cursive;
+font-family: 'Herr Von Muellerhoff', cursive;
+*/
+
+
+
+
+*,*::after,*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+a,a:link,a:visited{
+    text-decoration: none;
+}
+
+html{
+    font-size: 10px;
+}
+
+
+
+.header{
+    background-image: url("header.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100vh;
+}
+
+
+.container{
+    max-width: 150rem;
+    margin: 0 auto;
+    padding: 0;
+}
+.header-navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4rem 0;
+    
+}
+.header-logo{
+    display: flex;
+    align-items: center;
+    
+}
+.header-logo h2{
+    font-size: 5rem;
+    cursor: pointer;
+    position: relative;
+    font-family: 'Shantell Sans', cursive;
+}
+.line{
+    width: 35rem;
+    height: 50px;
+    background-color: transparent;
+    position: absolute;
+    top: 24%;
+    left: 2%;
+    opacity: 0;
+    transition: .1s;
+    border-bottom: 3px solid rgb(127, 87, 78);
+    border-radius: 10px;  
+}
+.header-logo h2:hover .line{
+opacity: 1;
+}
+.header-logo img{
+    cursor: pointer;
+        width: 10rem;
+       font-size: 5rem;
+       mix-blend-mode: multiply; 
+}
+.header-menu ul{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    
+}
+li{
+    list-style: none;
+    
+    
+}
+li a{
+    font-size: 2.5rem;
+    font-weight: bold;
+    display: block;
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    color: black;
+    font-family: 'Noto Serif', serif;
+    ;
+}
+.m{
+    margin-right: 1rem;
+}
+li a:hover{
+    background-color: #5B4339;
+    color: white;
+}
+li:first-child{
+    margin-right: 50px;
+}
+
+.header-context{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+.header-context h1{
+    font-size: 16.2rem;
+    font-family: 'Herr Von Muellerhoff', cursive;
+    color: #5B4339;
+    font-weight: 100;
+    letter-spacing: 0.4rem;
+    line-height: 0.4;
+    
+}
+.first-letter{
+    font-family: 'Herr Von Muellerhoff', cursive;
+    color: #5B4339;
+    font-size: 20rem;
+}
+.header-context h3{
+    font-size: 2.5rem;
+    font-family: 'Noto Serif', serif;
+    margin-bottom: 3rem;
+}
+.header-context .btn{
+display: block;
+padding: 2rem;
+background-color: #5B4339;
+border-top-left-radius: 3rem;
+border-bottom-right-radius: 3rem;
+color: white;
+font-family: 'Shantell Sans', cursive;
+font-size: 2rem;
+position: relative;
+overflow: hidden;
+
+}
+.header-context .btn::after{
+content: "Buy";
+font-family: 'Shantell Sans', cursive;
+font-size: 2rem;
+color: white;
+background-color: #735145;
+position: absolute;
+top: 100%;
+left: 0;
+width: 100%;
+height: 100%;
+transition: 0.3s;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.header-context .btn:hover::after{
+top: 0;
+}
+.about{
+    margin-bottom: 5rem;
+}
+.about .container{
+    max-width: 170rem;
+}
+.about-title{
+    margin: 6rem 0;
+    text-align: center;
+}
+
+.about-title h2{
+    font-size: 8rem;
+    color: #5B4339;
+    font-family: 'Shantell Sans', cursive;
+    
+    
+}
+.about-title h2::after{
+content: "";
+width: 6rem;
+height: 0.6rem;
+display: block;
+background-color: #5B4339;
+margin: 0 auto;
+margin-top: -1rem;
+}
+
+.about-img img{
+    width: 80rem;
+    height: auto;
+}
+
+.about-content{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.about-text{
+    text-align: center; 
+    margin-right: 2rem;
+}
+
+.about-text h4{
+    font-size: 5rem;
+    width: 75rem;
+    font-family: 'Noto Serif', serif;
+    color: #5B4339;
+}
+.about-text i{
+    color: #5B4339;
+    font-size: 5rem;
+}
+.about-text-p{
+    width: 80rem;
+    margin: 0 auto;
+    margin-top: 2rem;
+    height: 30rem;
+    overflow: auto;
+    
+}
+
+.about-text-p p{
+    font-size: 2rem;
+    font-family: 'Noto Serif', serif;
+    font-weight: 800;
+}
+
+
+
+.pictures{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30rem;
+}
+.pictures-item .img-div{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.pictures-item{
+
+ overflow: hidden;
+ height: 300px;
+ width: 25%;
+ padding: 1rem 3rem;
+ 
+
+}
+.pictures-item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+.pictures-item .overlay{
+    width: 100%;
+    height: 100%;
+    background-color: #735145;
+    position: absolute;
+    left: 0;
+    bottom: 0.3%;
+    transition: .3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+}
+.pictures-item .overlay i{
+    font-size: 5rem;
+    color: white;
+    
+}
+
+.pictures-item .img-div:hover .overlay{
+    opacity: 0.8;
+    top: 0;
+}
+.menu-btn{
+    display: none;
+}
+@media screen and (max-width:1600px){
+    
+    html{
+        font-size: 7px;
+    }
+
+
+}
+@media screen and (max-width:1200px){
+
+    html{
+        font-size: 6px;
+    }
+    
+    .pictures-item{
+        width: 50%;
+    }
+
+
+}
+@media screen and (max-width:992px){
+    
+    html{
+        font-size: 5px;
+    }
+    .pictures-item{
+        width: 50%;
+    }
+
+
+
+}
+@media screen and (max-width:800px){
+    
+    html{
+        font-size: 4px;
+    }
+    .pictures-item{
+        width: 100%;
+    }
+    .about-content{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .about-content img{
+        width: 100%;
+    }
+
+
+
+}
+@media screen and (max-width:600px){
+
+    html{
+        font-size:4px;
+    }
+    
+    .header-menu{
+        position: absolute;
+        left: -100%;
+        opacity: 0;
+    }
+
+    .menu-btn{
+        display: block;
+        position: absolute;
+        right: 5%;
+    }
+    .header-menu.active{
+        position: absolute;
+        left: 0;
+        top: 7%;
+        background-color: #5B4339;
+        display: flex;
+        justify-content: left;
+        opacity: 1;
+        width: 100%;
+        transition: 0.5s;
+    }
+   
+    .header-menu.active ul{
+       
+        display: flex;
+        flex-direction: column;
+    }
+    .header-menu.active ul li a{
+        color: white;
+        padding:4rem;
+        font-size: 3rem;
+        
+        
+    }
+
+
+}
